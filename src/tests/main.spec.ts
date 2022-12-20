@@ -28,3 +28,10 @@ describe("上端と下端を配列形式にする場合", () => {
         expect(closedRange.getRangeArray()).toBe("[3,7]")
     })
 })
+
+describe("指定した整数が閉区間に含まれているかを判定する", () => {
+    test('"[3,7]"に含まれる4の場合trueを返すこと', () => {
+        const closedRange = new ClosedRange(3, 7)
+        expect(closedRange.isIncludeNumber(4)).toBe(true)
+    })
+})
