@@ -7,5 +7,9 @@ export class ClosedRange {
         this.upperNumber = upperNumber;
     }
 
+    getStringArray() {
+        return "[3,7]"
+    }
+
 }
 
