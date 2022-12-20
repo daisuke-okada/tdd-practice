@@ -8,7 +8,7 @@ export class ClosedRange {
     }
 
     getStringArray() {
-        return "[3,7]"
+        return `[${this.lowerNumber},${this.upperNumber}]`
     }
 
 }
