@@ -7,7 +7,7 @@ export class ClosedRange {
         this.upperNumber = upperNumber;
     }
 
-    getStringArray() {
+    getRangeArray() {
         return `[${this.lowerNumber},${this.upperNumber}]`
     }
 
