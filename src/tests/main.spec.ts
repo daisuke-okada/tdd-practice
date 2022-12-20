@@ -1,3 +1,5 @@
+import { Range } from '../main'
+
 test("テスト", () => {
-    expect(1 + 1).toBe(2)
+    expect(new Range(1, 2).rowerNumber).toBe(1)
 })
