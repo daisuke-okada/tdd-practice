@@ -34,4 +34,9 @@ describe("指定した整数が閉区間に含まれているかを判定する"
         const closedRange = new ClosedRange(3, 7)
         expect(closedRange.isIncludeNumber(4)).toBe(true)
     })
+
+    test('"[3,7]"に含まれない2の場合falseを返すこと', () => {
+        const closedRange = new ClosedRange(3, 7)
+        expect(closedRange.isIncludeNumber(2)).toBe(false)
+    })
 })
