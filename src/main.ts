@@ -11,5 +11,15 @@ export class ClosedRange {
         return `[${this.lowerNumber},${this.upperNumber}]`
     }
 
+    isIncludeNumber(num: number) {
+        return this.isLowerUpperNumber(num) && this.isUpperLowerNumber(num)
+    }
+    isLowerUpperNumber(num: number): boolean {
+        return this.upperNumber >= num;
+    }
+
+    isUpperLowerNumber(num: number): boolean {
+        return this.lowerNumber <= num;
+    }
 }
 
