@@ -1,4 +1,4 @@
-export class Range {
+export class ClosedRange {
     rowerNumber: number;
     upperNumber: number;
 
