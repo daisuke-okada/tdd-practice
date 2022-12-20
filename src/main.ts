@@ -3,8 +3,8 @@ export class Range {
     upperNumber: number;
 
     constructor(rowerNumber: number, upperNumber: number) {
-        this.rowerNumber = 1;
-        this.upperNumber = 2;
+        this.rowerNumber = rowerNumber;
+        this.upperNumber = upperNumber;
     }
 
 }
