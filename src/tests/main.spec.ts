@@ -1,11 +1,14 @@
 import { ClosedRange } from '../main'
 
+// 色々あったが共通化しないほうが良さそう
 describe('閉区間クラスのコンストラクタの確認をする', () => {
-    test("下端点を渡して、下端点を渡すようにする", () => {
-        expect(new ClosedRange(1, 2).rowerNumber).toBe(1)
+    test("下端点を返す", () => {
+        const closedRange = new ClosedRange(1, 2)
+        expect(closedRange.lowerNumber).toBe(1)
     })
 
-    test("上端点の取得をした", () => {
-        expect(new ClosedRange(1, 2).upperNumber).toBe(2)
+    test("上端点を返す", () => {
+        const closedRange = new ClosedRange(1, 2)
+        expect(closedRange.upperNumber).toBe(2)
     })
 })

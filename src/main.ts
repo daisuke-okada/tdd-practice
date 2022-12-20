@@ -1,9 +1,9 @@
 export class ClosedRange {
-    rowerNumber: number;
+    lowerNumber: number;
     upperNumber: number;
 
-    constructor(rowerNumber: number, upperNumber: number) {
-        this.rowerNumber = rowerNumber;
+    constructor(lowerNumber: number, upperNumber: number) {
+        this.lowerNumber = lowerNumber;
         this.upperNumber = upperNumber;
     }
 
