@@ -16,6 +16,6 @@ describe('閉区間クラスのコンストラクタの確認をする', () => {
 describe("上端と下端を配列形式にする場合", () => {
     test('上端点と下端点が文字列で出力される', () => {
         const closedRange = new ClosedRange(3, 7)
-        expect(closedRange.getArray()).toBe("[3,7]")
+        expect(closedRange.getStringArray()).toBe("[3,7]")
     })
 })
